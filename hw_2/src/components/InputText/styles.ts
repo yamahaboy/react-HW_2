@@ -4,6 +4,7 @@ import { IProps } from "./InputText";
 export const ChildrenText = styled.div`
   font-size: 26px;
   color: #000;
+  margin-bottom: 10px;
 `;
 export const InputStyled = styled.input<IProps>`
   width: 300px;
