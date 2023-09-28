@@ -29,11 +29,50 @@ const getInputStyles = (type: string) => {
       `;
     case "focused":
       return css`
+        /* border: 1px solid #9ca3af;
+        color: #9ca3af;
         &:focus {
           border: 1px solid #116acc;
           background-color: #a0c3ff1a;
           color: #000;
-        }
+        } */
+        border: 1px solid #116acc;
+        background-color: #a0c3ff1a;
+        color: #000;
+      `;
+    case "hover":
+      return css`
+        /* border: 1px solid #9ca3af;
+        color: #9ca3af;
+        &:hover {
+          border: 1px solid #116acc;
+          background-color: #a0c3ff1a;
+          color: #000;
+        } */
+        border: 1px solid #116acc;
+        background-color: #a0c3ff1a;
+        color: #000;
+      `;
+    case "filled":
+      return css`
+        border: 1px solid #9ca3af;
+        color: black;
+      `;
+    case "typing":
+      return css`
+        border: 1px solid #116acc;
+        background-color: #a0c3ff1a;
+        color: #000;
+      `;
+    case "error":
+      return css`
+        border: 1px solid #ba0000;
+        color: #9ca3af;
+      `;
+    case "success":
+      return css`
+        border: 1px solid #76ca66;
+        color: #9ca3af;
       `;
   }
 };
