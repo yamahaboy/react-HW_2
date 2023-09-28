@@ -1,14 +1,28 @@
-interface IProps {
-  type: string;
+import { InputStyled, ChildrenText } from "./styles";
+
+export interface IProps {
+  type:
+    | "default"
+    | "disable"
+    | "focused"
+    | "hover"
+    | "filled"
+    | "typing"
+    | "error"
+    | "success";
   placeholder?: string;
-  value?: string;
+  children?: string;
 }
 
-export const InputText = ({ type, placeholder, value }: IProps) => {
+export const InputText = ({ type, placeholder, children }: IProps) => {
   return (
     <div>
-      <p>{type}</p>
-      <input className="input-text" placeholder={placeholder} value={value} />
+      <ChildrenText>{children}</ChildrenText>
+      <InputStyled
+        className="input-text"
+        placeholder={placeholder}
+        type={type}
+      />
     </div>
   );
 };
