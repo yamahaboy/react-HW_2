@@ -3,6 +3,7 @@ import { InputBlock } from "../../containers/InputBlock/inputBlock";
 import { BlockOfButtons } from "../../containers/BlockOfButtons/BlockOfButtons";
 
 import { PresentationPage, ComponentName } from "./styles";
+import { SnackBar } from "../../containers/SnackBar/SnackBar";
 
 export const Presentation = () => {
   return (
@@ -12,6 +13,8 @@ export const Presentation = () => {
       <InputBlock />
       <ComponentName>Buttnons</ComponentName>
       <BlockOfButtons />
+      <ComponentName>Snackbar</ComponentName>
+      <SnackBar />
     </PresentationPage>
   );
 };
