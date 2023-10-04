@@ -4,6 +4,7 @@ import { BlockOfButtons } from "../../containers/BlockOfButtons/BlockOfButtons";
 
 import { PresentationPage, ComponentName } from "./styles";
 import { SnackBar } from "../../containers/SnackBar/SnackBar";
+import { Bar } from "../../containers/ProgressBar/ProgressBar";
 
 export const Presentation = () => {
   return (
@@ -15,6 +16,8 @@ export const Presentation = () => {
       <BlockOfButtons />
       <ComponentName>Snackbar</ComponentName>
       <SnackBar />
+      <ComponentName>Progress Bar</ComponentName>
+      <Bar />
     </PresentationPage>
   );
 };
